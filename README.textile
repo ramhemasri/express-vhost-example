@@ -1,0 +1,22 @@
+h1. Express vhost middleware example
+
+This is a quick and dirty example about how to have more than one domain (or subdomain) served by a single "express":http://expressjs.com/ server, not a complete how-to. 
+
+h2. Run the example
+
+Prerequisite: add localone and localtwo domains to your /etc/hosts.
+
+<pre><code>
+cd express-multi-domains
+cd localone
+npm install
+cd ../localtwo
+npm install
+cd ..
+npm install
+node server.js
+</code></pre>
+
+_Note: of course (sub)domains files should be located somewhere else, this is just for example sake_
+
+Now domains are accessible through localone:8000 and localtwo:8000.
